@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <Description>Wrap an exception to a type</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl></PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/vicosanz/Infoware.ErrOr</PackageProjectUrl>
     <RepositoryUrl>https://github.com/vicosanz/Infoware.ErrOr</RepositoryUrl>
     <Authors>Victor Sanchez</Authors>
     <Company>Infoware Soluciones</Company>
