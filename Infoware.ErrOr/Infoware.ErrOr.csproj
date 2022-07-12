@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Description>Wrap an exception to a type</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vicosanz/Infoware.ErrOr</RepositoryUrl>
+    <Authors>Victor Sanchez</Authors>
+    <Company>Infoware Soluciones</Company>
+    <Version>1.0.0</Version>
+    <PackageReleaseNotes>Wrap an exception to a type</PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>
