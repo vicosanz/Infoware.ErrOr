@@ -20,12 +20,12 @@ namespace Infoware.ErrOr
         /// <summary>
         /// Return inner value only if has a not null value
         /// </summary>
-        public TValue Value => IsSuccess && _value != null ? _value : throw new InvalidOperationException();
+        public TValue Value => _value!;
 
         /// <summary>
         /// Return inner exception if it is an error
         /// </summary>
-        public Exception Exception => _exception ?? throw new InvalidOperationException();
+        public Exception Exception => _exception!;
 
         /// <summary>
         /// Create a new object that has resulted from a valid operation
