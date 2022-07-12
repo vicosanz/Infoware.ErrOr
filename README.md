@@ -3,6 +3,7 @@ Wrap an exception to a type
 
 [![NuGet Badge](https://buildstats.info/nuget/Infoware.ErrOr)](https://www.nuget.org/packages/Infoware.ErrOr/)
 
+[![publish to nuget](https://github.com/vicosanz/Infoware.ErrOr/actions/workflows/main.yml/badge.svg)](https://github.com/vicosanz/Infoware.ErrOr/actions/workflows/main.yml)
 
 Implicit convertion automatically allow return type or exception
 Match method handle success and failed result in the same expression
