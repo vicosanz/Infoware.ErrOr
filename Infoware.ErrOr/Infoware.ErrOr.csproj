@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/vicosanz/Infoware.ErrOr</RepositoryUrl>
     <Authors>Victor Sanchez</Authors>
     <Company>Infoware Soluciones</Company>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <PackageReleaseNotes>Wrap an exception to a type</PackageReleaseNotes>
   </PropertyGroup>
 

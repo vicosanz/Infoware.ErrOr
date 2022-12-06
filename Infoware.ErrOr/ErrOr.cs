@@ -6,7 +6,7 @@ namespace Infoware.ErrOr
     /// Wrap an exception to a type
     /// </summary>
     /// <typeparam name="TValue">Type wrapped</typeparam>
-    public readonly struct ErrOr<TValue>
+    public readonly struct ErrOr<TValue> : IErrOr
     {
         private readonly TValue? _value = default;
         private readonly Exception? _exception = null;
