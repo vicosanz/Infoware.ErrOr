@@ -6,7 +6,7 @@ namespace Infoware.ErrOr
     /// Wrap an exception to a type
     /// </summary>
     /// <typeparam name="TValue">Type wrapped</typeparam>
-    public readonly struct ErrOr<TValue> : IErrOr
+    public readonly struct ErrOr<TValue> : IErrOr 
     {
         private readonly TValue? _value = default;
         private readonly Exception? _exception = null;
@@ -45,6 +45,36 @@ namespace Infoware.ErrOr
         {
             _exception = e ?? throw new ArgumentNullException(nameof(e));
             _value = default;
+        }
+
+        /// <summary>
+        /// Create a new object that has resulted from a failed operation
+        /// </summary>
+        /// <param name="error">Error message</param>
+        /// <returns>ErrOr<typeparamref name="TValue"/></returns>
+        public static ErrOr<TValue> Fail(string error)
+        {
+            return new(new Exception(error));
+        }
+
+        /// <summary>
+        /// Create a new object that has resulted from a failed operation
+        /// </summary>
+        /// <param name="exception">Exception result</param>
+        /// <returns>ErrOr<typeparamref name="TValue"/></returns>
+        public static ErrOr<TValue> Fail(Exception exception)
+        {
+            return new(exception);
+        }
+
+        /// <summary>
+        /// Create a new object that has resulted from a valid operation
+        /// </summary>
+        /// <param name="ok">Valid result object</param>
+        /// <returns>ErrOr<typeparamref name="TValue"/></returns>
+        public static ErrOr<TValue> Ok(TValue ok)
+        {
+            return new(ok);
         }
 
         /// <summary>
